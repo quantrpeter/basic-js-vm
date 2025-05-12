@@ -1,0 +1,28 @@
+{
+  "name": "@lamus/qbasic-vm",
+  "version": "0.0.0",
+  "description": "Running basic language in javascript",
+  "main": "dist/basic-js-vm.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "repository": "https://github.com/quantrpeter/basic-js-vm",
+  "author": "Jan Starzak <jan.starzak@gmail.com>",
+  "contributors": [
+    {
+      "name": "Peter",
+      "email": "peter@quantr.hk",
+      "url": "https://www.hkprog.org"
+    }
+  ],
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "webpack serve",
+    "bundle": "rimraf ./dist && webpack"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
+}

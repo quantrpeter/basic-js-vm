@@ -3,20 +3,20 @@ const webpack = require('webpack')
 
 module.exports = {
 	mode: 'development',
-	entry: './src/index.js',
+	entry: {
+		main: './src/index.js',
+	},
 	output: {
 		path: path.join(__dirname, 'dist'),
-		filename: 'basic-js-vm.js',
 	},
 	devtool: 'source-map',
-	module: {
-		rules: [
-		]
-	},
 	devServer: {
 		static: [
 			{
 				directory: path.join(__dirname, 'demo')
+			},
+			{
+				directory: path.join(__dirname, 'dist')
 			}
 		],
 		compress: true,
